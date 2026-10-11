@@ -47,12 +47,6 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- 標題區 ---------- */
 .title-block { margin: 0 0 2.2mm 0; }
-.slot-label {
-  font-size: 8pt;
-  color: var(--muted);
-  letter-spacing: 0.04em;
-  margin: 0 0 0.6mm 0;
-}
 h1 {
   font-size: 16pt;
   line-height: 1.3;
