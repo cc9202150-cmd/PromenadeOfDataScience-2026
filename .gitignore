@@ -1,0 +1,12 @@
+.venv/
+data/
+資料描述/
+docs/txt/
+__pycache__/
+*.pkl
+# 個人層級資料（含學生 ID），依 SRDA 規範不得散布
+outputs/typology/tables/type_assignment.csv
+outputs/typology/tables/posterior_probs.csv
+# 報告工作檔
+report/drafts/
+report/factsheet.md
