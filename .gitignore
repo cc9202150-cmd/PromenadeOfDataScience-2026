@@ -10,3 +10,5 @@ outputs/typology/tables/posterior_probs.csv
 # 報告工作檔
 report/drafts/
 report/factsheet.md
+# 上傳用 PDF（與 report/report.pdf 相同）
+submission/
