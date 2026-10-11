@@ -195,12 +195,6 @@ table.table1 {
 }
 
 /* ---------- 文末 ---------- */
-.note-help {
-  display: block;
-  font-size: 8.4pt;
-  color: var(--sec);
-  margin-top: 0.6mm;
-}
 .refs p {
   font-size: 7.6pt;
   line-height: 1.2;
