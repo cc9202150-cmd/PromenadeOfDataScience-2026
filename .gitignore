@@ -12,3 +12,8 @@ report/drafts/
 report/factsheet.md
 # 上傳用 PDF（與 report/report.pdf 相同）
 submission/
+# 完整報告：逐頁預覽 PNG、轉檔器測試輸出、寫作工作檔（皆可由腳本重建）
+report_long/pages/
+report_long/chapters_sample/build/
+report_long/outline.md
+report_long/glossary.md

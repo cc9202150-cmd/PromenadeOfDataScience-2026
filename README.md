@@ -18,6 +18,9 @@ python -m venv .venv
 .venv/Scripts/python -I scripts/05_risk_prediction.py  # 早期預警模型（約 7 分鐘）
 .venv/Scripts/python -I scripts/06_report_figures.py   # 報告圖 1–4、表 1
 .venv/Scripts/python -I scripts/07_build_report.py     # report/report.html → report.pdf、pages/*.png（需 Microsoft Edge）
+.venv/Scripts/python -I scripts/09_screen_time_vs_bedtime.py # 螢幕時間 vs 上床時間（延宕迴歸、差值檢定）
+.venv/Scripts/python -I scripts/10_long_report_figures.py   # 長版報告圖表（由 02–05、09 的輸出重繪，印刷尺寸）
+.venv/Scripts/python -I scripts/08_build_long_report.py     # report_long/chapters → DOCX → PDF、pages/*.png（需 Microsoft Word）
 ```
 
 ## 結構
@@ -29,6 +32,9 @@ python -m venv .venv
 - `scripts/05_risk_prediction.py`：學校分組巢狀交叉驗證的預警模型、10 題篩檢、SHAP、公平性，輸出 `outputs/prediction`
 - `scripts/06_report_figures.py`：由上述 CSV 重繪報告圖表，輸出 `report/figures`、`report/tables`
 - `scripts/07_build_report.py`：以 Edge headless 將 `report/report.html` 輸出為 PDF 並轉成逐頁 PNG
+- `scripts/09_screen_time_vs_bedtime.py`：休閒上網時數 vs 上床時間 → 國八憂鬱（單獨、互相控制、逐步加入、差值 Wald 檢定、題本／共變項穩健性），輸出 `outputs/screen_vs_bedtime`
+- `scripts/10_long_report_figures.py`：由 02–05、09 的輸出表格以印刷尺寸重繪長版報告圖表（另讀原始資料與本機類型歸屬檔核對圖的標準差），輸出 `report_long/figures`
+- `scripts/08_build_long_report.py`：將 `report_long/chapters/*.md` 轉為 DOCX，再以 Microsoft Word（COM）更新目錄並匯出 PDF、逐頁 PNG 與格式自我檢查（需 Microsoft Word），輸出 `report_long/`
 
 ## 資料處理重點
 - 負值代碼（-999 跳答、-9 未填等）皆視為遺漏。
